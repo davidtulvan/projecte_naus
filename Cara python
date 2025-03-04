@@ -1,0 +1,102 @@
+import pygame
+
+pygame.init()
+
+
+WIDTH, HEIGHT = 900, 900
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("DANI PEREIRA")
+
+
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+BROWN = (139, 69, 19)
+DARK_BROWN = (101, 67, 33)
+PINK = (255, 182, 193)
+GRAY = (169, 169, 169)
+RED = (255, 0, 0)
+CANNABIS= (125,96,14)
+BROWN1= (110, 54, 0)
+GOLD= (239,184,16)
+DIAMANTE= (112,209,244)
+GOLD1= (255,235,145)
+
+face_x, face_y = WIDTH // 2, HEIGHT // 2
+
+running = True
+while running:
+    screen.fill(WHITE)
+    pygame.draw.line(screen, GOLD1, (face_x - 450, face_y - 350), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x - 450, face_y - 250), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x - 450, face_y - 100), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x - 450, face_y - 50), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x - 450, face_y - 0), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x - 450, face_y + 50), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x - 450, face_y + 100), (face_x - 20, face_y - 25), 15)
+    #
+    pygame.draw.line(screen, GOLD1, (face_x - 450, face_y + 250), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x - 450, face_y + 350), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x - 450, face_y - 250), (face_x - 20, face_y - 25), 10)
+    pygame.draw.line(screen, GOLD1, (face_x + 450, face_y - 350), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x + 450, face_y - 250), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x + 450, face_y - 100), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x + 450, face_y - 50), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x + 450, face_y - 0), (face_x - 20, face_y - 25), 15)
+    # pygame.draw.line(screen, GOLD1, (face_x + 450, face_y + 9450), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x + 450, face_y + 50), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x + 450, face_y + 100), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x + 450, face_y + 250), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x+ 450, face_y + 350), (face_x - 20, face_y - 25), 15)
+    pygame.draw.line(screen, GOLD1, (face_x + 450, face_y - 250), (face_x - 20, face_y - 25), 10)
+
+
+    #
+    pygame.draw.ellipse(screen, BROWN, (face_x - 200, face_y - 150, 400, 320))
+
+
+    pygame.draw.circle(screen, BLACK, (face_x - 70, face_y - 50), 30)
+    pygame.draw.circle(screen, BLACK, (face_x + 70, face_y - 50), 30)
+    pygame.draw.circle(screen, WHITE, (face_x - 70, face_y - 50), 15)
+    pygame.draw.circle(screen, WHITE, (face_x + 70, face_y - 50), 15)
+    pygame.draw.circle(screen, BLACK, (face_x - 70, face_y - 50), 10)
+    pygame.draw.circle(screen, BLACK, (face_x + 70, face_y - 50), 10)
+
+
+    pygame.draw.line(screen, RED, (face_x - 50, face_y - 25), (face_x - 20, face_y - 25), 3)
+    pygame.draw.line(screen, RED, (face_x + 20, face_y - 25), (face_x + 50, face_y - 25), 3)
+    pygame.draw.line(screen, RED, (face_x - 70, face_y - 15), (face_x - 20, face_y - 15), 3)
+    pygame.draw.line(screen, RED, (face_x + 20, face_y - 15), (face_x + 70, face_y - 15), 3)
+
+
+    pygame.draw.ellipse(screen, DARK_BROWN, (face_x - 70, face_y + 60, 140, 80))
+
+
+    pygame.draw.rect(screen, WHITE, (face_x - 30, face_y + 100, 30, 60))
+    pygame.draw.rect(screen, WHITE, (face_x + 5, face_y + 100, 30, 60))
+
+
+    pygame.draw.circle(screen, BROWN, (face_x - 130, face_y - 150), 50)
+    pygame.draw.circle(screen, BROWN, (face_x + 130, face_y - 150), 50)
+    pygame.draw.circle(screen, BROWN1, (face_x - 130, face_y - 150), 30)
+    pygame.draw.circle(screen, BROWN1, (face_x + 130, face_y - 150), 30)
+
+    pygame.draw.circle(screen, GOLD, (face_x - 160, face_y + -140), 15)
+    pygame.draw.circle(screen, GOLD, (face_x + 160, face_y + -140), 15)
+    pygame.draw.circle(screen, DIAMANTE, (face_x - 160, face_y + -140), 7.5)
+    pygame.draw.circle(screen, DIAMANTE, (face_x + 160, face_y + -140), 7.5)
+
+    pygame.draw.circle(screen, BLACK, (face_x, face_y + 60), 30)
+    pygame.draw.circle(screen, BROWN1, (face_x - 15, face_y + 70), 7.5)
+    pygame.draw.circle(screen, BROWN1, (face_x + 15, face_y + 70), 7.5)
+
+
+    pygame.draw.rect(screen, CANNABIS, (face_x + 40, face_y + 120, 80, 20))  #
+    pygame.draw.rect(screen, RED, (face_x + 118, face_y + 125, 15, 10))  #
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    pygame.display.flip()
+
+pygame.quit()
